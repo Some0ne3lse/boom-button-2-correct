@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+  <div class="pt-4 flex flex-col items-center">
+    <p class="text-9xl" id="number">1</p>
+    <div class="flex gap-4 text-6xl text-white">
+      <button class="bg-green-500 w-16 h-16" onclick="onIncrementClick()">+</button>
+      <button class="bg-red-500 w-16 h-16" onclick="onDecrementClick()">-</button>
+    </div>
+    <div class="p-5 flex flex-col items-center">
+      <div>
+        <p>Input increment/decrement value</p>
+        <input id="inc-and-dec-input" type="number" class="border">
+        <input id="limit-input" type="number" class="border">
+      </div>
+      <div>
+        <button id="save-to-local" onclick="saveToLocalStorage()" class="border">Apply and save to local
+          storage</button>
+        <button id="load-from-local" onclick="getItemFromLocalStorage()" class="border">Load from local storage</button>
+      </div>
+      <div>
+        <p id="current-input-number"></p>
+        <p id="current-limit-number"></p>
+      </div>
+    </div>
+    <ul id="boom-list" class="bg-purple-600 text-9xl text-white m-3">
+
+    </ul>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
